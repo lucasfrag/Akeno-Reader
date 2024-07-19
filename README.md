@@ -15,35 +15,41 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 📚 About The Project
 
-Akeno Reader is a graphical interface for organizing and reading PDF files through the browser.
+Akeno Reader is a graphical interface for organizing and reading PDF files through the browser. 
 
+### 🤔 The Problem...
 The project was built to solve a personal problem. On my computer, I have several PDF files of mangas, e-books, articles, among others. I would like to have an environment where I can read these files and, at the same time, organize them.
+
+### ...The Solution! 😍
+
+A graphical interface for organizing and reading PDF files through the browser.
 
 The system should be simple, without many technological complexities. 
 
-The technologies would be limited to HTML, CSS and JavaScript for the front-end and just PHP on the back-end to meet some needs. This way, the project would easily run on any computer with XAMPP or even USBWebServer.
+The technologies would be limited to HTML, CSS and JavaScript for the front-end and just PHP on the back-end to meet some needs. This way, the project would easily run on any computer with [XAMPP](https://www.apachefriends.org/pt_br/index.html) or even [USBWebServer](https://usbwebserver.yura.mk.ua/).
 And, as long as the PC is turned on, it can also be accessed on the local network by other devices such as a smartphone or tablet.
 
-NO DATABASE! Instead, PHP will access a directory, read the folders, subfolders and files and create the interface based on them. This way, the user (me) would only worry about organizing the files within the directory instead of doing CRUDs for each new PDF.
+<b>NO DATABASE!</b> Instead, PHP will access a directory, read the folders, subfolders, and files, and create an interface based on them. This way, the user (me) would only worry about organizing the files within the directory instead of doing CRUDs for each new PDF. After finishing reading a file, simply mark it as read - this information will be saved in `src/read_status.txt`.
 
 This way, I could separate entertainment content (such as manga) and study content (such as articles and technical books), and navigate between these libraries easily, quickly and intuitively.
 
-## Screenshots
+## 📸 Screenshots
 
 
-### Prerequisites
+## 👉 Prerequisites 
 
-- XAMPP or a web server configured with PHP
+- XAMPP, USBWebServer or a web server configured with PHP.
+
+💬<i> I personally used NGINX with PHP on Windows.</i>
 
 
-### Installation
+## ✅ Installation
 
 1. Extract the contents to the folder of your web server.
-2. Create a database called `kali` in MySQL and import the file `assets/database.sql`.
-3. Create a folder for your content in `src`, for example `Mangas` to compose the content type;
-4. Inside the created folder, add a folder for the content, for example `Yu-Gi-Oh!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
+2. Create a folder for your content in `src`, for example `Mangas` to compose the content type;
+3. Inside the created folder, add a folder for the content, for example `Yu-Gi-Oh!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
 
 ### Example
 
@@ -68,7 +74,7 @@ This way, I could separate entertainment content (such as manga) and study conte
     │   └── ...
     └── ...
 
-5. Enjoy!
+4. Enjoy!
 
 
 ## Built With
@@ -78,8 +84,8 @@ This way, I could separate entertainment content (such as manga) and study conte
 * [JQuery](https://jquery.com)
 
 ## Contributing
-Contributions are always welcome! 
 This is a personal project built for your own use. If you are interested, feel free to download it and customize it to your tastes and needs.
+I will not accept contributions as that would mean adjusting the project to someone else's needs rather than mine.
 
 ## License
 Distributed under the MIT License. See LICENSE for more information.
