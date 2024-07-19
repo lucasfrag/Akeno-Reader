@@ -52,9 +52,7 @@ include("assets/includes/head.php");
                                 
                                     <div class='card-body'>
                                         <div class="row">
-                                            <!--<div class="col-auto">
-                                                <img style="height: 400px; object-fit: cover;" src="<?php echo $folderName . '/' . $subfolderName . '/cover.jpg'; ?>">
-                                            </div>-->
+
                                             <div class="col">
                                                 <div class="row">
                                                     <?php montarConteudoPDF($arquivosPDF); ?>

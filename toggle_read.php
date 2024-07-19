@@ -1,5 +1,5 @@
 <?php
-$read_status_file = './src/read_status.txt'; // Arquivo que armazena o estado de leitura
+$read_status_file = './files/read_status.txt'; // Arquivo que armazena o estado de leitura
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file = urldecode($_POST['file']);

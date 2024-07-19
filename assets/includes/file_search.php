@@ -74,7 +74,8 @@ function organizarPorSubpasta($arquivosEncontrados) {
 }
 
 function montarConteudoPDF($arquivoPorSubpasta) {
-    $read_status_file = './src/read_status.txt'; // Arquivo que armazena o estado de leitura
+    $read_status_file = './files/read_status.txt'; // Arquivo que armazena o estado de leitura
+    verificarSeReadExiste($read_status_file);
 
     // Lê o estado de leitura dos arquivos
     $read_status = [];
@@ -119,7 +120,8 @@ function montarConteudoPDF($arquivoPorSubpasta) {
 }
 
 function calcularLidos ($diretorio) {
-    $read_status_file = './src/read_status.txt'; // Arquivo que armazena o estado de leitura
+    $read_status_file = './files/read_status.txt'; // Arquivo que armazena o estado de leitura
+    verificarSeReadExiste($read_status_file);
 
     // Lê o estado de leitura dos arquivos
     $read_status = [];
@@ -141,4 +143,13 @@ function calcularLidos ($diretorio) {
     }
 
     return $itensLidos;
+}
+
+
+function verificarSeReadExiste() {
+    $filename = './files/read_status.txt';
+    
+    if (!file_exists($filename)) {
+        $file = fopen($filename, 'w');
+    }
 }

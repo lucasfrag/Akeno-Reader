@@ -79,7 +79,7 @@
             <i class="ni ni-tv-2 text-blue"></i> Home
           </a>
         </li>
-        <!--
+
         <li class="nav-item">
           <a class="nav-link" href="library.php?content=cursos">
             <i class="ni ni-book-bookmark text-primary"></i> Cursos
@@ -91,11 +91,11 @@
             <i class="ni ni-books text-danger"></i> E-books
           </a>
         </li>
--->
+
 
         <li class="nav-item">
           <a class="nav-link" href="library.php?content=mangas">
-            <i class="fa fa-star text-yellow"></i> Mangas
+            <i class="fa fa-star text-yellow"></i> Mangás
           </a>
         </li>
 
@@ -107,14 +107,14 @@
       <hr class="my-3">
 
       <!-- Heading -->
-      <h6 class="navbar-heading text-muted">LINKS</h6>
+      <h6 class="navbar-heading text-muted">OTHERS</h6>
       <!-- Navigation -->
       <ul class="navbar-nav mb-md-3">
-        <!--<li class="nav-item">
-          <a class="nav-link" target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSd3GeoAqW05PDLmlyrCaeQu877HyRyzE8Sk0E5p9w2XWV1k0Q/viewform?usp=sf_link">
-            <i class="ni ni-chat-round"></i> Feedback
+        <li class="nav-item">
+          <a class="nav-link" target='' href="library.php?content=sample">
+            <i class="ni ni-bold-right"></i> Manga (Sample)
           </a>
-        </li>-->
+        </li>
 
       </ul>
     </div>

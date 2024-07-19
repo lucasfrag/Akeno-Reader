@@ -18,9 +18,6 @@
 
     <!-- Argon CSS -->
     <link type="text/css" href="assets/css/argon.css?v=1.0.0" rel="stylesheet">
-
-    <!-- Video JS -->
-    <link type="text/css" href="assets/css/video-js.css" rel="stylesheet">
     
 	<!-- Custom CSS Import -->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
