@@ -79,7 +79,7 @@
             <i class="ni ni-tv-2 text-blue"></i> Home
           </a>
         </li>
-
+        <!--
         <li class="nav-item">
           <a class="nav-link" href="library.php?content=cursos">
             <i class="ni ni-book-bookmark text-primary"></i> Cursos
@@ -91,11 +91,11 @@
             <i class="ni ni-books text-danger"></i> E-books
           </a>
         </li>
-
+-->
 
         <li class="nav-item">
           <a class="nav-link" href="library.php?content=mangas">
-            <i class="fa fa-star text-yellow"></i> Mangás
+            <i class="fa fa-star text-yellow"></i> Mangas
           </a>
         </li>
 

@@ -1,0 +1,1 @@
+a:1:{s:32:"./src/Mangas//Berserk\Sample.pdf";b:1;}
