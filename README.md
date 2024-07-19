@@ -31,7 +31,7 @@ The system should be simple, without many technological complexities.
 The technologies would be limited to HTML, CSS and JavaScript for the front-end and just PHP on the back-end to meet some needs. This way, the project would easily run on any computer with [XAMPP](https://www.apachefriends.org/pt_br/index.html) or even [USBWebServer](https://usbwebserver.yura.mk.ua/).
 And, as long as the PC is turned on, it can also be accessed on the local network by other devices such as a smartphone or tablet.
 
-<b>NO DATABASE!</b> Instead, PHP will access a directory, read the folders, subfolders, and files, and create an interface based on them. This way, the user (me) would only worry about organizing the files within the directory instead of doing CRUDs for each new PDF. After finishing reading a file, simply mark it as read - this information will be saved in `src/read_status.txt`.
+<b>NO DATABASE!</b> Instead, PHP will access a directory, read the folders, subfolders, and files, and create an interface based on them. This way, the user (me) would only worry about organizing the files within the directory instead of doing CRUDs for each new PDF. After finishing reading a file, simply mark it as read - this information will be saved in `files/read_status.txt`.
 
 This way, I could separate entertainment content (such as manga) and study content (such as articles and technical books), and navigate between these libraries easily, quickly and intuitively.
 
@@ -48,14 +48,14 @@ This way, I could separate entertainment content (such as manga) and study conte
 ## ✅ Installation
 
 1. Extract the contents to the folder of your web server.
-2. Create a folder for your content in `src`, for example `Mangas` to compose the content type;
+2. Create a folder for your content in `files`, for example `Mangas` to compose the content type;
 3. Inside the created folder, add a folder for the content, for example `Yu-Gi-Oh!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
 
 ### Example
 
     .
     ├── ...
-    ├── src                               
+    ├── files                               
     │   ├── E-books                       
     │   │   ├── PHP                 
     │   │   │    ├── cover.jpg
