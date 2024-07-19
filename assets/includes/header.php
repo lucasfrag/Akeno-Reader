@@ -80,25 +80,27 @@
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="library.php?content=cursos">
-            <i class="ni ni-book-bookmark text-primary"></i> Cursos
-          </a>
-        </li>        
 
-        <li class="nav-item">
-          <a class="nav-link" href="library.php?content=ebooks">
-            <i class="ni ni-books text-danger"></i> E-books
-          </a>
-        </li>
+        <?php 
+          require_once('./assets/includes/file_search.php');
+          require_once('./assets/includes/content.php');
+          $dir = './files/';
+          $folders = getPastas($dir);
+          
+          foreach ($folders as $folder) {
+              $conteudo = getConteudo($folder);
 
-
-        <li class="nav-item">
-          <a class="nav-link" href="library.php?content=mangas">
-            <i class="fa fa-star text-yellow"></i> Mangás
-          </a>
-        </li>
-
+              if(!is_null($conteudo) && $conteudo->nomePasta != "Sample") {
+                echo "
+                <li class='nav-item'>
+                  <a class='nav-link' href='library.php?content=". $conteudo->nomePasta ."'>
+                    <i class='". $conteudo->iconeNav ."'></i> ". $conteudo->nomePasta ."
+                  </a>
+                </li>
+              ";
+              }
+          }
+        ?>        
        
 
 
@@ -111,7 +113,7 @@
       <!-- Navigation -->
       <ul class="navbar-nav mb-md-3">
         <li class="nav-item">
-          <a class="nav-link" target='' href="library.php?content=sample">
+          <a class="nav-link" target='' href="library.php?content=Sample">
             <i class="ni ni-bold-right"></i> Manga (Sample)
           </a>
         </li>

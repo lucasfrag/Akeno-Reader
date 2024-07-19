@@ -153,3 +153,24 @@ function verificarSeReadExiste() {
         $file = fopen($filename, 'w');
     }
 }
+
+function getPastas($dir) {
+    $directories = [];
+
+    if (is_dir($dir)) {
+        // Abrir o diretório
+        if ($dh = opendir($dir)) {
+            // Ler o conteúdo do diretório
+            while (($file = readdir($dh)) !== false) {
+                // Verificar se é uma pasta, ignorando "." e ".."
+                if ($file != "." && $file != ".." && is_dir($dir . DIRECTORY_SEPARATOR . $file)) {
+                    $directories[] = $file;
+                }
+            }
+            // Fechar o diretório
+            closedir($dh);
+        }
+    }
+
+    return $directories;
+}

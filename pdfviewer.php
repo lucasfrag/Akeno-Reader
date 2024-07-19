@@ -1,5 +1,5 @@
 <?php
-$read_status_file = './src/read_status.txt'; // Arquivo que armazena o estado de leitura
+$read_status_file = './files/read_status.txt'; // Arquivo que armazena o estado de leitura
 $content = $_GET['content'];
 
 // Lê o estado de leitura dos arquivos

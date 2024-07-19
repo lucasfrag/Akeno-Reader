@@ -2,7 +2,6 @@
 
 require_once('./assets/includes/file_search.php');
 require_once('./assets/includes/content.php');
-
 $arquivosEncontrados = listarArquivosPDF($pastaRaiz);
 $itensPorSubpasta = organizarPorSubpasta($arquivosEncontrados);
 
