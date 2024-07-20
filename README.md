@@ -49,27 +49,27 @@ This way, I could separate entertainment content (such as manga) and study conte
 
 1. Extract the contents to the folder of your web server.
 2. Create a folder for your content in `files`, for example `Mangas` to compose the content type;
-3. Inside the created folder, add a folder for the content, for example `Yu-Gi-Oh!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
+3. Inside the created folder, add a folder for the content, for example `Vagabond!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
 
 ### Example
 
     .
     ├── ...
     ├── files                               
-    │   ├── E-books                       
-    │   │   ├── PHP                 
-    │   │   │    ├── cover.jpg
-    │   │   │    ├── Data structure.pdf
-    │   │   │    └── ...
     │   ├── Mangas                        
-    │   │   ├── Death Note                 
+    │   │   ├── Vagabond                 
     │   │       ├── cover.jpg
     │   │       ├── Chapter 01.pdf
-    │   │       └── ...        
+    │   │       └── ...             
+    │   ├── Samples                       
+    │   │   ├── Berserk                 
+    │   │   │    ├── cover.jpg
+    │   │   │    ├── Sample 01.pdf
+    │   │   │    └── ...
     │   │   ├── Yu-Gi-Oh!                 
-    │   │       ├── cover.jpg
-    │   │       ├── Chapter 01.pdf
-    │   │       └── ...        
+    │   │   │    ├── cover.jpg
+    │   │   │    ├── Sample 01.pdf
+    │   │   │    └── ...    
     │   ├── read_status.txt                                        
     │   └── ...
     └── ...
