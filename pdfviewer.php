@@ -19,11 +19,9 @@ $isRead = isset($read_status[$content]) && $read_status[$content];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Reader</title>
-  
 </head>
 
 <style>
-
 body {
     margin: 0;
     background-color: #f5f5f5;
@@ -220,6 +218,15 @@ body {
         pdfDoc = pdfDoc_;
         document.getElementById('page-count').textContent = pdfDoc.numPages;
         renderPage(pageNum);
+      });
+
+      document.getElementById('book-container').addEventListener('click', function(e) {
+        const containerWidth = this.clientWidth;
+        if (e.clientX < containerWidth / 2) {
+          onPrevPage();
+        } else {
+          onNextPage();
+        }
       });
 
     });
