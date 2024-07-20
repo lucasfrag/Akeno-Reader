@@ -48,7 +48,7 @@ include("assets/includes/head.php");
                                                     <div class="col-auto"><img style="height: 170px; object-fit: cover; object-position: top;" src="<?php echo $pastaRaiz . '/' . $subpasta . '/cover.jpg'; ?>"></div>
                                                     
                                                     <div class="col">
-                                                        <h2 class="text-primary"><?php echo $subpasta; ?></h2>  
+                                                        <h2 class="text-default "><?php echo $subpasta; ?></h2>  
 
                                                         <div class='progress-wrapper'>
                                                             <div class='progress-info'>
@@ -65,7 +65,7 @@ include("assets/includes/head.php");
                                                         </div>
 
                                                         
-                                                        <a href="./list-files.php?folderName=<?php echo $pastaRaiz; ?>&subfolderName=<?php echo $subpasta ?>" class="btn btn-default" type="button"><i class="ni ni-bold-right text-white"></i> ABRIR</a>
+                                                        <a href="./list-files.php?folderName=<?php echo $pastaRaiz; ?>&subfolderName=<?php echo $subpasta ?>" class="btn btn-primary" type="button"><i class="ni ni-bold-right text-white"></i> ABRIR</a>
                                                     </div>
                                                 </div>
                                             </div>
