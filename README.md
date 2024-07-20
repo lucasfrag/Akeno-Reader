@@ -57,8 +57,8 @@ This way, I could separate entertainment content (such as manga) and study conte
 ## ✅ Installation
 
 1. Extract the contents to the folder of your web server.
-2. Create a folder for your content in `files`, for example `Mangas` to compose the content type;
-3. Inside the created folder, add a folder for the content, for example `Vagabond!` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
+2. Create a folder for your content in `files` (for example `Mangas`) to compose the content type;
+3. Inside the created folder, add a folder for the content, for example `Vagabond` and place all your PDF files in this folder and also a file called `cover.jpg` to create the cover.
 
 ### Example
 
