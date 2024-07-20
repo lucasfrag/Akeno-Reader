@@ -6,7 +6,7 @@
       <div class="copyright text-center text-xl-left text-muted">
         &copy; <script>
           
-        </script> <a href="" class="font-weight-bold ml-1" target="_blank">Kali Player</a>
+        </script> <a href="" class="font-weight-bold ml-1" target="_blank">Akeno Reader</a>
       </div>
     </div>
     <div class="col-xl-5">
