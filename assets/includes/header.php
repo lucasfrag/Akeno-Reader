@@ -90,7 +90,7 @@
           foreach ($folders as $folder) {
               $conteudo = getConteudo($folder);
 
-              if(!is_null($conteudo) && $conteudo->nomePasta != "Sample") {
+              if(!is_null($conteudo) && $conteudo->nomePasta != "Samples") {
                 echo "
                 <li class='nav-item'>
                   <a class='nav-link' href='library.php?content=". $conteudo->nomePasta ."'>
@@ -113,8 +113,8 @@
       <!-- Navigation -->
       <ul class="navbar-nav mb-md-3">
         <li class="nav-item">
-          <a class="nav-link" target='' href="library.php?content=Sample">
-            <i class="ni ni-bold-right"></i> Manga (Sample)
+          <a class="nav-link" target='' href="library.php?content=Samples">
+            <i class="ni ni-bold-right"></i> Manga (Samples)
           </a>
         </li>
 

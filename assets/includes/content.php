@@ -8,15 +8,14 @@
     }
 
     function getConteudo($pasta) {
-        // Inicializa um objeto vazio
         $conteudoObj = new stdClass();
         $conteudoObj->nomePasta = $pasta;
         $conteudoObj->pastaRaiz = './files/'. $pasta . "/";
 
+
+        /* PERSONALIZE CONTENT */
         // Add cases to set specific properties for each folder
         
-        // $$conteudoObj->iconeNav = Defines which classes will be used to build the icon in the html <i> located in header.php
-
         switch ($pasta) {
             case "Cursos":
                 $conteudoObj->iconeNav = 'ni ni-book-bookmark text-primary';
