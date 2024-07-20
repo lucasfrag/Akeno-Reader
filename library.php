@@ -36,6 +36,8 @@ include("assets/includes/head.php");
 
                             <?php
                             foreach ($itensPorSubpasta as $subpasta => $itens) {
+                                $totalLivros = sizeof(listarArquivosPDF($pastaRaiz . "/" . $subpasta));
+                                $lidos = calcularLidos($pastaRaiz . "/" . $subpasta);
                             ?>
                                 
                                 <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
@@ -43,13 +45,26 @@ include("assets/includes/head.php");
                                         <div class="card zoom-effect bg-white">
                                             <div class="card-body">
                                                 <div class="row">
-                                                    <div class="col-auto"><img style="height: 150px; object-fit: cover; object-position: top;" src="<?php echo $pastaRaiz . '/' . $subpasta . '/cover.jpg'; ?>"></div>
+                                                    <div class="col-auto"><img style="height: 170px; object-fit: cover; object-position: top;" src="<?php echo $pastaRaiz . '/' . $subpasta . '/cover.jpg'; ?>"></div>
                                                     
                                                     <div class="col">
                                                         <h2 class="text-primary"><?php echo $subpasta; ?></h2>  
 
-                                                        <h2 class="text-default"><?php echo calcularLidos($pastaRaiz . "/" . $subpasta); ?> / <?php echo sizeof(listarArquivosPDF($pastaRaiz . "/" . $subpasta)); ?></h2>
+                                                        <div class='progress-wrapper'>
+                                                            <div class='progress-info'>
+                                                            <div class='progress-label'>
+                                                                <span>Progress</span>
+                                                            </div>
+                                                            <div class='progress-percentage'>
+                                                                <span><?php echo $lidos; ?> / <?php echo $totalLivros; ?></span>
+                                                            </div>
+                                                            </div>
+                                                            <div class='progress'>
+                                                            <div class='progress-bar bg-success' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: <?php echo ($totalLivros > 0) ? ($lidos / $totalLivros) * 100 : 0; ?>%;'></div>
+                                                            </div>
+                                                        </div>
 
+                                                        
                                                         <a href="./list-files.php?folderName=<?php echo $pastaRaiz; ?>&subfolderName=<?php echo $subpasta ?>" class="btn btn-default" type="button"><i class="ni ni-bold-right text-white"></i> ABRIR</a>
                                                     </div>
                                                 </div>
