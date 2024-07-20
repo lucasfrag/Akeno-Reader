@@ -74,7 +74,8 @@ This way, I could separate entertainment content (such as manga) and study conte
     │   └── ...
     └── ...
 
-4. Enjoy!
+4. If you want to assign specific icons in the navigation for each folder, go to `includes/content.php` and customize the switch case.
+5. Enjoy!
 
 
 ## Built With
