@@ -48,7 +48,7 @@ include("assets/includes/head.php");
                                                     <div class="col-auto"><img style="height: 170px; object-fit: cover; object-position: top;" src="<?php echo $pastaRaiz . '/' . $subpasta . '/cover.jpg'; ?>"></div>
                                                     
                                                     <div class="col">
-                                                        <h2 class="text-default "><?php echo $subpasta; ?></h2>  
+                                                        <h2 class="text-default limitar-texto" style="min-height: 60px;"><?php echo $subpasta; ?></h2>  
 
                                                         <div class='progress-wrapper'>
                                                             <div class='progress-info'>
