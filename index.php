@@ -38,7 +38,7 @@ include("assets/includes/head.php");
                       <div class='col-sm-6 col-xl-3 col-lg-4'>
                         <a href='library.php?content=". $conteudo->nomePasta ."'>
                           <div class='card bg-dark border-white text-white card-image zoom-effect'>
-                            <img class='card-image' src='files/". $conteudo->nomePasta ."/cover.jpg'>
+                            <img class='card-img card-image' src='files/". $conteudo->nomePasta ."/cover.jpg'>
                             <div class='card-img-overlay'>
                               <h1 class='card-text text-white card-image-center'>".$conteudo->nomePasta."</h1>
                             </div>
