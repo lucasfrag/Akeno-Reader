@@ -127,9 +127,9 @@ body {
       <!--<button id="next-page" class="nav-btn">►</button>-->
     </div>
     <canvas id="pdf-render"></canvas>
-    <button id="exit-btn" onclick="javascript:history.back()">X</button>
-    <button id="fullscreen-btn" onclick="toggleFullScreen()">⛶</button>
-    <button id="read-btn" onclick="toggleRead('<?php echo urlencode($content); ?>')" style="background-color: <?php echo $isRead ? '#23d93e' : '#ffffff'; ?>; color: <?php echo $isRead ? 'white' : 'black'; ?>">
+    <button id="exit-btn" onclick="exitReader(event)">X</button>
+    <button id="fullscreen-btn" onclick="toggleFullScreen(event)">⛶</button>
+    <button id="read-btn" onclick="toggleRead(event, '<?php echo urlencode($content); ?>')" style="background-color: <?php echo $isRead ? '#23d93e' : '#ffffff'; ?>; color: <?php echo $isRead ? 'white' : 'black'; ?>">
         ✔
     </button>  
   </div>
@@ -243,7 +243,8 @@ body {
     });
 
     // Função para alternar o modo de tela cheia
-    function toggleFullScreen() {
+    function toggleFullScreen(event) {
+        event.stopPropagation();
         if (!document.fullscreenElement) {
           document.documentElement.requestFullscreen();
         } else {
@@ -251,10 +252,17 @@ body {
             document.exitFullscreen();
           }
         }
-      }
+    }
+
+    // Função para sair do leitor
+    function exitReader(event) {
+        event.stopPropagation();
+        history.back();
+    }
 
     // Função para alternar o estado de leitura
-    function toggleRead(file) {
+    function toggleRead(event, file) {
+        event.stopPropagation();
         const xhr = new XMLHttpRequest();
         xhr.open('POST', 'toggle_read.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
