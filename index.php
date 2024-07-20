@@ -33,7 +33,7 @@ include("assets/includes/head.php");
               foreach ($folders as $folder) {
                   $conteudo = getConteudo($folder);
 
-                  if(!is_null($conteudo) && $conteudo->nomePasta != "Samples") {
+                  if(!is_null($conteudo)) {
                     echo "
                       <div class='col-sm-6 col-xl-3 col-lg-4'>
                         <a href='library.php?content=". $conteudo->nomePasta ."'>
