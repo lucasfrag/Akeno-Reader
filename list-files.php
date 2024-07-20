@@ -38,7 +38,7 @@ include("assets/includes/head.php");
                                 <center>
                                     <img style="object-position: top; object-fit: cover;   height: 200px" src="<?php echo  $folderName . $subfolderName . '/cover.jpg'; ?>">
                                     <br><br>
-                                    <h1 class="card-text text-primary" style="font-size: 28px;"><?php echo $subfolderName; ?></h1>
+                                    <h1 class="card-text text-default" style="font-size: 28px;"><?php echo $subfolderName; ?></h1>
 
                                 </center>
                                 <br>

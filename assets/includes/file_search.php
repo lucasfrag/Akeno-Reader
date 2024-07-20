@@ -105,7 +105,7 @@ function montarConteudoPDF($arquivoPorSubpasta) {
                                         class='btn " . ($isRead ? 'btn-success' : 'btn-secondary') . "'>
                                         " . ($isRead ? '<i class="fa fa-check"></i> Lido' : 'Não lido') . "
                                     </button>
-                                    <a href='pdfviewer.php?content=" . urlencode($arquivo) . "' class='btn btn-default' type='button'>
+                                    <a href='pdfviewer.php?content=" . urlencode($arquivo) . "' class='btn btn-primary' type='button'>
                                         <i class='ni ni-bold-right'></i> Abrir
                                     </a>
                                 </div>
