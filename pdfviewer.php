@@ -46,12 +46,13 @@ body {
     text-align: center;
     margin-bottom: 10px;
     position: absolute;
-    top: 4px;
-    width: 100%;
+    bottom: 0px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    background-color: white;
   }
   
   canvas {
@@ -59,7 +60,7 @@ body {
     margin: 0 auto;
     display: block;
     max-width: 100%;
-    max-height: 95%;
+    max-height: 100%;
   }
   
   .nav-btn, #fullscreen-btn, #exit-btn, #read-btn {
@@ -226,6 +227,15 @@ body {
         if (e.clientX < containerWidth / 2) {
           onPrevPage();
         } else {
+          onNextPage();
+        }
+      });
+
+      // Event listeners para as setas do teclado
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          onPrevPage();
+        } else if (e.key === 'ArrowRight') {
           onNextPage();
         }
       });
