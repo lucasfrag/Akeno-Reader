@@ -37,6 +37,15 @@ This way, I could separate entertainment content (such as manga) and study conte
 
 ## 📸 Screenshots
 
+### Dashboard
+<img src="https://github.com/lucasfrag/Akeno-Reader/blob/main/assets/img/Screenshot_001.jpg">
+
+### File list
+<img src="https://github.com/lucasfrag/Akeno-Reader/blob/main/assets/img/Screenshot_002.jpg">
+
+### PDF Viewer
+<img src="https://github.com/lucasfrag/Akeno-Reader/blob/main/assets/img/Screenshot_003.jpg">
+
 
 ## 👉 Prerequisites 
 
