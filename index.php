@@ -21,20 +21,38 @@ include("assets/includes/head.php");
 
           <!-- Categorias -->
           <div class="card-body">
-          <!--  <h2 class="">Categorias</h2>
+          <h2 class="">Library</h2>
             <div class="row">
 
+            <?php 
+              require_once('./assets/includes/file_search.php');
+              require_once('./assets/includes/content.php');
+              $dir = './files/';
+              $folders = getPastas($dir);
               
-              <div class="col-sm-6 col-xl-3 col-lg-4">
-                <a href="./pornstars.php">
-                  <div class="card bg-dark border-white text-white card-image zoom-effect">
-                    <img class="card-img card-image" src="./assets/img/pornstars.jpg">
-                    <div class="card-img-overlay">
-                      <h1 class="card-text text-white card-image-center">PORNSTARS</h1>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              foreach ($folders as $folder) {
+                  $conteudo = getConteudo($folder);
+
+                  if(!is_null($conteudo) && $conteudo->nomePasta != "Samples") {
+                    echo "
+                      <div class='col-sm-6 col-xl-3 col-lg-4'>
+                        <a href='library.php?content=". $conteudo->nomePasta ."'>
+                          <div class='card bg-dark border-white text-white card-image zoom-effect'>
+                            <img class='card-image' src='files/". $conteudo->nomePasta ."/cover.jpg'>
+                            <div class='card-img-overlay'>
+                              <h1 class='card-text text-white card-image-center'>".$conteudo->nomePasta."</h1>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    ";
+
+                  }
+              }
+            ?> 
+
+          <!--    
+
 
 
 
