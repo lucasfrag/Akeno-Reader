@@ -102,8 +102,8 @@ function montarConteudoPDF($arquivoPorSubpasta) {
                                 <div style='display: inline-block;'>
                                     <button 
                                         onclick='toggleRead(\"" . urlencode($arquivo) . "\")'
-                                        class='btn " . ($isRead ? 'btn-success' : 'btn-secondary') . "'>
-                                        " . ($isRead ? '<i class="fa fa-check"></i> Read' : 'Not read') . "
+                                        class='btn " . ($isRead ? 'btn-success' : 'btn-outline-default') . "'>
+                                        " . ($isRead ? '<i class="fa fa-check"></i> Read' : 'X Not read') . "
                                     </button>
                                     <a href='pdfviewer.php?content=" . urlencode($arquivo) . "' class='btn btn-primary' type='button'>
                                         <i class='ni ni-bold-right'></i> Open
