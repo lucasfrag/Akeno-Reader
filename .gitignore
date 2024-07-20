@@ -1,6 +1,6 @@
 # Ignore as pastas e arquivos salvos
 files/*
 
-!files/Sample
+!files/Samples
 
 !
