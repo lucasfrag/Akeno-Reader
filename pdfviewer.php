@@ -46,11 +46,12 @@ body {
     text-align: center;
     margin-bottom: 10px;
     position: absolute;
-    bottom: 0px;
+    top: 4px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
   }
   
   canvas {
@@ -103,7 +104,7 @@ body {
 
   #read-btn {
     position: absolute;
-    bottom: 90px;
+    bottom: 70px;
     right: 20px;
   }
   
@@ -120,9 +121,9 @@ body {
 <body>
   <div id="book-container">
     <div id="toolbar">
-      <button id="prev-page" class="nav-btn">◄</button>
+      <!--<button id="prev-page" class="nav-btn">◄</button>-->
       <span id="page-num"></span> / <span id="page-count"></span>
-      <button id="next-page" class="nav-btn">►</button>
+      <!--<button id="next-page" class="nav-btn">►</button>-->
     </div>
     <canvas id="pdf-render"></canvas>
     <button id="exit-btn" onclick="javascript:history.back()">X</button>
@@ -211,8 +212,8 @@ body {
         queueRenderPage(pageNum);
       };
 
-      document.getElementById('prev-page').addEventListener('click', onPrevPage);
-      document.getElementById('next-page').addEventListener('click', onNextPage);
+      //document.getElementById('prev-page').addEventListener('click', onPrevPage);
+      //document.getElementById('next-page').addEventListener('click', onNextPage);
 
       pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
         pdfDoc = pdfDoc_;
