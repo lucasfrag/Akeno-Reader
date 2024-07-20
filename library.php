@@ -65,7 +65,7 @@ include("assets/includes/head.php");
                                                         </div>
 
                                                         
-                                                        <a href="./list-files.php?folderName=<?php echo $pastaRaiz; ?>&subfolderName=<?php echo $subpasta ?>" class="btn btn-primary" type="button"><i class="ni ni-bold-right text-white"></i> ABRIR</a>
+                                                        <a href="./list-files.php?folderName=<?php echo $pastaRaiz; ?>&subfolderName=<?php echo $subpasta ?>" class="btn btn-primary" type="button"><i class="ni ni-bold-right text-white"></i> OPEN</a>
                                                     </div>
                                                 </div>
                                             </div>
