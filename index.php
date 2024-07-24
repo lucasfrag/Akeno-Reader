@@ -16,12 +16,11 @@ include("assets/includes/head.php");
       <div class="col">
         <div class="card shadow ">
           <div class="card-header bg-transparent">
-            <h1 class="mb-0 ">Dashboard</h1>
+            <h1 class="mb-0 ">Library</h1>
           </div>
 
           <!-- Categorias -->
           <div class="card-body">
-          <h2 class="">Library</h2>
             <div class="row">
 
             <?php 
