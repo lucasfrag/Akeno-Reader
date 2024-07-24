@@ -66,7 +66,7 @@ include("assets/includes/head.php");
           
           
           
-
+          </div>
         </div>
 
         <?php
