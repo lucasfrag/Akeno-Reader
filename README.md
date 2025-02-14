@@ -100,8 +100,4 @@ I will not accept contributions as that would mean adjusting the project to some
 ## License
 Distributed under the MIT License. See LICENSE for more information.
 
-<!-- CONTACT -->
-## Contact
-
-Lucas Fraga - ti.lucasfraga@gmail.com
 
